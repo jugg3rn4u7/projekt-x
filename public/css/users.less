@@ -1,0 +1,160 @@
+
+.profile-header {
+	position: relative;
+	height: 360px;
+
+	div.row {
+		width: 100%;
+		position: absolute;
+		bottom: 20px;
+		left: 48px;
+		right: 48px;
+
+		.user-header-avatar {
+			padding: 8px;
+			background: white;
+			border: 3px solid #EEE;
+			.drop-shadow(2px, 4px, 8px, 0.5);
+			float: left;
+			width: 150px;
+		}
+
+		.user-header-info {
+			position: absolute;
+			top: 96px;
+			bottom: 0px;
+			left: 200px;
+		}
+	}
+}
+
+.user-placeholder-small {
+
+}
+
+.user-placeholder-medium {
+
+}
+
+.user-placeholder-large {
+
+}
+
+
+#signup-page-container {
+
+	.controls .help-inline {
+		display: none;
+	}
+
+	.form-horizontal {
+		width: 40%;
+		float:left;
+	}
+
+	#terms-span {
+		width: 240px;
+		display: inline-block;
+		margin-left: 180px;
+		margin-top: 10px;
+	}
+
+	.line-vertical {
+		height: 300px;
+		float: left;
+		margin-top: 75px;
+		margin-right: 50px;
+		margin-left: 50px;
+		border-width: 1px;
+	}
+
+	#signup-button {
+		disabled: disabled;
+	}
+
+	input {
+		clear: right;
+	}
+
+	.username-password-invalid {
+		margin-left: 95px;
+		color: red;
+	}
+}
+
+#user-basic-settings {
+	.password-strength-meter {
+		width: 80%;
+	}
+
+	#avatar-container {
+
+		.avatar-upload-content {
+			margin: 20px 0 0 0;
+
+			.qq-upload-button {
+				margin: 0 0 10px 0;
+				background: #66B2CF;
+				width: 30%;
+				padding: 7px;
+				text-align: left;
+
+				i {
+					color: #fff;
+				}
+
+				&:hover {
+					background: #66CF6F;
+				}
+			}
+
+			.qq-upload-drop-area {
+				min-height: 46px;
+				line-height: 16px;
+			}
+
+			.qq-upload-list{
+				display: none;
+			}
+		}
+
+		.avatar-image-container {
+			width: 250px;
+			padding: 8px;
+			background: white;
+			border: 3px solid #EEE;
+
+			.avatar-delete {
+				cursor: pointer;
+				display: none;
+				width: 10%;
+				padding: 5px;
+				text-align: left;
+				color: white;
+				background: #DF5A5A;
+				position: absolute;
+				font-size: 13px;
+
+				i {
+					color: #fff;
+				}
+
+				&:hover {
+					background: #CF3333;
+				}
+			}
+
+			&:hover {
+				.avatar-delete {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+#user-settings-basic {
+	.help-inline {
+		display: none;
+	}
+}

@@ -1,0 +1,49 @@
+.store-actions {
+	margin: 0 0 20px 0;
+	.clearfix();
+}
+
+#application-install-options {
+	margin: 10px 0 50px 0;
+	display: none;
+	.drop-shadow(5px, 5px, 10px, 0.2);
+}
+
+ul.comments {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li.comment {
+		padding: 20px 20px 50px 20px;
+		margin: 0 20px 15px 20px;
+		border: 1px solid #BBB;
+		position: relative;
+		.rounded(5px);
+
+		.user-details {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			margin: 5px 0 5px 0;
+		}
+
+		.comment-content {
+			text-align: justify;
+		}
+
+		.btn-group {
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+		}
+
+		&:nth-child(odd) {
+			background: #EFEFEE;
+		}
+
+		&:nth-child(even) {
+			background: #DDD;
+		}
+	}
+}

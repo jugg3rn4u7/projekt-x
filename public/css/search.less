@@ -1,0 +1,291 @@
+#searchbox-dropdown {
+
+	#search-input {
+		border-radius: 5px;
+	}
+
+	#searchbox-submit-button {
+		display: none;
+	}
+}
+
+#searchbox-results {
+
+	display: none;
+	position: absolute;
+	top: 41px;
+	background-color: #F8F8F8;
+	left: 194px;
+	width: 334px;
+	padding: 10px;
+	border-radius: 0 0 3px 3px;
+
+	.groups-results-header, .users-results-header {
+		display: inline-block;
+		margin-bottom: 3px;
+		font-size: 15px;
+		font-weight: bold;
+		color: #199ACC;
+		cursor: default;
+	}
+
+	.users-results-header {
+		margin-top: 8px;
+	}
+
+	#groups-search-results, #users-search-results, #query-search-results {
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				cursor: pointer;
+				list-style-type: none;
+				background: #EDEDED;
+				border-top: 2px solid #F8F8F8;
+				border-bottom: 2px solid #F8F8F8;
+				padding: 7px;
+				font-size: 15px;
+			}
+
+			li:hover {
+				background: #333;
+				color: #FEFEFE;
+			}
+
+			.search-results-empty {
+				color: red;
+			}
+
+		}
+
+		.icon-user, .icon-th {
+			float: right;
+			margin: 3px 4px 4px 4px;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+}
+
+
+#search-results-container {
+
+	min-height: 600px;
+
+	#search-results-header {
+		color: #3CC769;
+		padding-bottom: 2px !important;
+	}
+
+	.search-categories {
+
+		list-style-type: none;
+		margin: 0 !important;
+
+		li {
+			font-family: verdana;
+			color: #636363;
+			cursor: pointer;
+			font-size: 17px;
+			padding: 7px 0;
+		}
+
+		li:hover {
+			color: #2C6F96
+		}
+
+		.active {
+			font-weight: bold;
+		}
+	}
+
+	.search-content {
+
+		.results-search-form {
+
+			display: block;
+			margin: 82px 0 0 35px;
+
+			#search-results-input {
+				width: 500px;
+				height: 36px;
+				border-radius: 5px;
+				padding: 5px 83px 1px 14px !important;
+				font-size: 18px;
+			}
+
+			#search-input-button {
+				position: absolute;
+				top: 6px;
+				right: 6px;
+				padding: 0;
+				height: 32px;
+				width: 65px;
+				font-size: 15px;
+			}
+		}
+
+		#search-results {
+
+			background-color: #F8F8F8;
+			width: 692px;
+			padding: 8px 23px 24px 23px;
+			border-radius: 0 0 5px 5px;
+			margin: 164px 0 0 35px;
+
+			.groups-results-header, .users-results-header {
+				margin-bottom: 3px;
+				font-size: 15px;
+				font-weight: bold;
+				color: #199ACC;
+				cursor: default;
+				font-size: 20px;
+				margin: 15px 0 8px 0;
+			}
+
+			.groups-search-results, .users-search-results, .tags-search-result {
+
+				ul {
+					margin: 0;
+					padding: 0;
+
+					li {
+						cursor: pointer;
+						list-style-type: none;
+						background: #EDEDED;
+						border-top: 2px solid #F8F8F8;
+						border-bottom: 2px solid #F8F8F8;
+						padding: 22px;
+						font-size: 22px;
+					}
+
+					li:hover {
+						background: #333;
+						color: #FEFEFE;
+					}
+				}
+
+				.search-results-empty {
+					color: red;
+				}
+
+				.icon-user, .icon-th {
+					float: right;
+					margin: 3px 4px 4px 4px;
+				}
+			}
+
+			ul {
+				list-style-type: none;
+			}
+
+		}
+
+	}
+}
+
+
+
+#multi-select-searchbox {
+
+	#input-container {
+
+		background-color: white;
+		height: 100px;
+		padding: 5px;
+		border-radius: 2px;
+		overflow-x: hidden;
+
+		#selected-items {
+
+			.invited-user, .selected-tag {
+				margin: 3px;
+			}
+		}
+
+	}
+
+	#search-input {
+		margin: 6px;
+		border: none;
+		box-shadow: none;
+		width: 250px;
+	}
+
+	#search-input-button {
+		display: none;
+	}
+
+	#invite-users-button {
+		float: right;
+		margin-bottom: 15px;
+	}
+
+	.selected-item {
+		float: left;
+	}
+
+	#item-searchbox-results {
+
+		display: none;
+		position: absolute;
+		top: 50;
+		cursor: pointer;
+		overflow-x: hidden;
+		height: 164px;
+		border: 2px solid dimGray;
+		margin: 0 0 0 -2px;
+		width: 350px;
+		background-color: white;
+
+		ul {
+			margin: 0;
+			list-style-type: none;
+
+			.multi-select-search-result {
+
+				.multi-select-search-item {
+					margin: 5px 0;
+				}
+
+				.tags-search-result.multi-select-search-item {
+					padding: 5px 10px;
+				}
+
+				.active {
+					cursor: pointer;
+					background: #555;
+					color: #fefefe;
+				}
+
+				&:hover, .active:hover {
+					cursor: pointer;
+					background: #E66363;
+				}
+			}
+
+			.search-results-empty {
+				padding: 5px;
+				color: red;
+			}
+		}
+	}
+
+}
+
+
+// .user-placeholder-small	.active {
+// 	cursor: pointer;
+// 	background: #555;
+// 	color: #fefefe;
+
+// 	&:hover {
+// 		cursor: pointer;
+// 		background: #e66363;
+// 	}
+// }
