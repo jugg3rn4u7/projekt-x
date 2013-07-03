@@ -1,13 +1,14 @@
+define(function ( require ) {
+
 	'use strict';
 
 	var Marionette = require( 'marionette' );
 	var Backbone   = require( 'backbone' );
 	var _          = require( 'underscore' );
 	var $          = require( 'jquery' );
-	var Vent       = require( 'Vent' );
-	var App        = require( 'App' );
-	var Session    = require( 'Session' );
 	var async      = require( 'async' );
+
+	var SoundCloudModel = require( 'SoundCloudModels/SoundCloudModel' );
 
 	var SoundCloudController = Marionette.Controller.extend( {
 
@@ -18,6 +19,38 @@
 
 		'isAuthenticated' : function () {
 			
+		},
+
+		'showMyAccnt' : function () {
+
+		},
+
+		'showMyTracks' : function () {
+
+		},
+
+		'showAllTracks' : function () {
+
+			var Track  = SoundCloudModel.extend({ urlRoot : this.urlRoot + '/:clientId/tracks' });
+			var tracks = new Track();
+alert('asd');
+			tracks.fetch( { 
+				success: function ( model, response ) {
+					console.log("model : ", model);
+				},
+
+				error: function ( error, response ) {
+					console.log("error : ", error);
+				}  
+			} ); 
+		},
+
+		'showMyFollowers' : function () {
+
+		},
+
+		'showDefault' : function () {
+
 		}
 
 	} );

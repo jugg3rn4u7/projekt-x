@@ -47,6 +47,9 @@ module.exports = function () {
 		} );
 
 		require( _paths( 'app.controllers.public.PublicController' ) )( app );
+
+		// SoundCloud B/E controller
+		require( _paths( 'app.controllers.soundcloud.SoundCloudController' ) )( app );
 		
 	}
 

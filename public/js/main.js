@@ -1,14 +1,12 @@
 define( function ( require ) {
 	'use strict';
 
-	var App    = require( 'App' );
-	var Router = require( 'Router' );
+	var App 				= new Backbone.Marionette.Application();
 
-	var SoundCloudRouter    = require( 'routers/soundcloud/SoundCloudRouter' );
+	var SoundCloudRouter    = require( 'SoundCloudRouters/SoundCloudRouter' );
 
 	$( function () {
 
-		App.Router           = Router;
 		App.SoundCloudRouter = SoundCloudRouter;
 
 		App.start();

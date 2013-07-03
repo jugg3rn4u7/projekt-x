@@ -33,50 +33,17 @@ require.config( {
 		'components'               : 'views/components',
 
 		// Base application level classes
-		'Vent'                     : 'Vent',
-		'App'                      : 'App',
-		'Router'                   : 'routers/AppRouter',
-		'Controller'               : 'controllers/AppController',
-		'Session'                  : 'models/users/SessionModel',
+		//'Vent'                     : 'Vent',
+		//'Controller'               : 'controllers/AppController',
+		//'Session'                  : 'models/users/SessionModel',
+		'App'					   : 'App',
 
-
-		// User related paths
-		'UserModels'               : 'models/users',
-		'UserCollections'          : 'collections/users',
-		'UserViews'                : 'views/users',
-		'UserRoutes'               : 'routers/users',
-
-		// Group related paths
-		'GroupModels'              : 'models/groups',
-		'GroupCollections'         : 'collections/groups',
-		'GroupViews'               : 'views/groups',
-		'GroupRoutes'              : 'routers/groups',
-
-		'GroupSettingViews'        : 'views/groups/settings',
-
-		// Notification related paths
-		'NotificationsModels'      : 'models/notifications',
-		'NotificationsCollections' : 'collections/notifications',
-		'NotificationsViews'       : 'views/notifications',
-
-		// Resource related paths
-		'ResourceModels'           : 'models/resources',
-		'ResourceCollections'      : 'collections/resources',
-		'ResourceViews'            : 'views/resources',
-		'ResourceRoutes'           : 'routers/resources',
-
-		// Store related paths
-		'StoreModels'              : 'models/store',
-		'StoreCollections'         : 'collections/store',
-		'StoreRoutes'              : 'routers/store',
-		'StoreViews'               : 'views/store',
-
-		// Search paths
-		'SearchCollections'        : 'collections/search',
-		'SearchViews'              : 'views/search',
-
-		//Compenents
-		'meter'                    : 'views/components/password-strength-meter/StrengthMeterItemView'
+		// SoundCloud related paths
+		'SoundCloudModels'              : 'models/soundcloud',
+		'SoundCloudCollections'         : 'collections/soundcloud',
+		'SoundCloudViews'               : 'views/soundcloud',
+		'SoundCloudRouters'             : 'routers/soundcloud',
+		'SoundCloudControllers'         : 'controllers/soundcloud'
 
 	},
 
