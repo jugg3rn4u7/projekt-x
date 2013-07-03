@@ -5,16 +5,16 @@ define( function ( require ) {
 	var Marionette 				= require( 'marionette' );
 	var SoundCloudController 	= require( 'controllers/soundcloud/SoundCloudController' );
 
-	var router =  Marionette.AppRouter.extend( {
+	var Router =  Marionette.AppRouter.extend( {
 		'appRoutes' : {
-			'groups/:groupId'                        : 'showGroup',
-			'groups/:groupId/resources/:resourceId'  : 'invokeResources',
-			'groups/:groupId/settings/membership'    : 'showMembership',
-			'groups/:groupId/settings*actions'       : 'showSettings',
-			'groups/*actions'                        : 'showDefault'
+			'soundcloud/:clientId'                        	: 'showMyAccnt',
+			'soundcloud/:clientId/tracks'  					: 'showMyTracks',
+			'soundcloud/:clientId/alltracks'			    : 'showAllTracks',
+			'soundcloud/:clientId/followers'		        : 'showMyFollowers',
+			'soundcloud/*actions'                           : 'showDefault'
 		}
 	} );
 
-	return new router( { 'controller' : SoundCloudController } );
+	return new Router( { 'controller' : SoundCloudController } );
 
 } );
